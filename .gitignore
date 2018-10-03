@@ -1,0 +1,7 @@
+# Ignore tempfiles.
+/tmp
+*.swp
+.DS_STORE
+
+# Ignore IDE/Editor config files
+.idea

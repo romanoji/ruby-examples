@@ -1,6 +1,9 @@
 # Ruby DI examples
 
-Simple DI examples in Ruby based on `dry-container`, `dry-auto_inject` & `dry-system` libs.
+Simple DI examples in Ruby based on
+[`dry-container`](https://dry-rb.org/gems/dry-container/),
+[`dry-auto_inject`](https://dry-rb.org/gems/dry-auto_inject/) &
+[`dry-system`](https://dry-rb.org/gems/dry-system/) libs.
 
 # What's inside?
 - `di.rb` file contains basic usage of the above libs.

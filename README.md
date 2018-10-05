@@ -12,6 +12,9 @@ Simple DI examples in Ruby based on
 
 - `src/usage_1..2` dirs contain potential examples, where these DI libs could be used.
 
+All classes inside `src/examples1..2` dirs are loaded and registered in the DI container
+automatically via `dry-system`'s container, which is configured in `config/di_container.rb` file. 
+
 # How to run it?
 
 First run `bundle install` to install all required dependencies.

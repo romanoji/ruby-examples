@@ -4,7 +4,7 @@ require 'dry/system/container'
 
 # noinspection ALL
 class DIContainer < Dry::System::Container
-  ROOT = Pathname('./src').freeze
+  ROOT = Pathname('./src/dependency_injection').freeze
   EXAMPLES_DIRS = %w(example_1 example_2) # ROOT.children.select(&:directory?).map(&:basename).map(&:to_s).freeze
 
   configure do |config|

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './config/di_container'
+require_relative './config/di_container'
 
 EXAMPLE_NO = ENV['EXAMPLE'].to_i
 

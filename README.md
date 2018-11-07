@@ -1,25 +1,12 @@
-# Ruby DI examples
+# Ruby examples
 
-Simple DI examples in Ruby based on
-[`dry-container`](https://dry-rb.org/gems/dry-container/),
-[`dry-auto_inject`](https://dry-rb.org/gems/dry-auto_inject/) &
-[`dry-system`](https://dry-rb.org/gems/dry-system/) libs.
+A collection of examples, which explain various design patterns, techniques, methodologies and approaches.
 
-# What's inside?
-- `di.rb` file contains basic usage of the above libs.
+## Initial setup
 
-- `src/example_1..3` dirs contain DI examples, which shows usage of the libs.
+Run `bundle install` to install the all required dependencies.
 
-- `src/usage_1..2` dirs contain potential examples, where these DI libs could be used.
+## Contents
 
-All classes inside `src/examples1..2` dirs are loaded and registered in the DI container
-automatically via `dry-system`'s container, which is configured in `config/di_container.rb` file. 
-
-# How to run it?
-
-First run `bundle install` to install all required dependencies.
-
-Then:
-- `ruby di.rb` - to run basic examples
-
-- `EXAMPLE=1` OR `EXAMPLE=2 ruby run.rb` - to run examples from the respective directories.
+1. [Dependency Injection examples](src/dependency_injection/README.md)
+1. [Design Patterns examples](src/design_patterns/README.md)

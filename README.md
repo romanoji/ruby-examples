@@ -8,5 +8,5 @@ Run `bundle install` to install the all required dependencies.
 
 ## Contents
 
-1. [Dependency Injection examples](src/dependency_injection/README.md)
-1. [Design Patterns examples](src/design_patterns/README.md)
+1. [Dependency Injection examples](src/dependency_injection)
+1. [Design Patterns examples](src/design_patterns)

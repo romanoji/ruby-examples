@@ -1,3 +1,3 @@
-≪ [back to contents](../../README.md)
+≪ [back to contents](../../../..)
 
 ## Design Patterns examples

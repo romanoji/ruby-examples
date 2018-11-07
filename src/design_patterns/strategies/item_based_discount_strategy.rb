@@ -8,7 +8,7 @@ class ItemBasedDiscountStrategy
     @discount_factor = discount_factor
   end
 
-  def calculate_for(amount, items)
+  def apply_to(amount, items)
     filtered_items = filter_items(items)
     amount - amount * filtered_items.size * @discount_factor
   end

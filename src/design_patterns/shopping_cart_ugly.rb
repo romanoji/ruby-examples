@@ -22,9 +22,9 @@ class ShoppingCartUgly
 
   def calculate_total_amount
     total_amount =
-      calculate_coupon_based_discount_for(
-        calculate_holiday_based_discount_for(
-          calculate_user_based_discount_for(
+      apply_coupon_based_discount_to(
+        apply_holiday_based_discount_to(
+          apply_user_based_discount_to(
             base_total_amount
           )
         )
@@ -35,7 +35,7 @@ class ShoppingCartUgly
 
   private
 
-  def calculate_user_based_discount_for(amount)
+  def apply_user_based_discount_to(amount)
     if @customer.is_a?(Customer) && @customer.account_plan == :pro
       amount - amount * 0.05
     elsif @customer.is_a?(Vip)
@@ -45,7 +45,7 @@ class ShoppingCartUgly
     end
   end
 
-  def calculate_holiday_based_discount_for(amount)
+  def apply_holiday_based_discount_to(amount)
     if christmas_today?
       amount - amount * @items.size * 0.01
     elsif easter_today?
@@ -55,7 +55,7 @@ class ShoppingCartUgly
     end
   end
 
-  def calculate_coupon_based_discount_for(amount)
+  def apply_coupon_based_discount_to(amount)
     return amount if @discount_coupon.blank?
 
     amount - amount * @discount_coupon.discount_percentage

@@ -2,7 +2,7 @@
 
 # Strategy && Null Object patterns - 2in1
 class NoDiscountStrategy
-  def calculate_for(amount, _items)
+  def apply_to(amount, _items)
     amount
   end
 end

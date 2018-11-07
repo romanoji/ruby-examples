@@ -22,9 +22,9 @@ class ShoppingCartUsingPatterns
 
   def calculate_total_amount
     total_amount =
-      calculate_coupon_based_discount_for(
-        calculate_holiday_based_discount_for(
-          calculate_user_based_discount_for(
+      apply_coupon_based_discount_to(
+        apply_holiday_based_discount_to(
+          apply_user_based_discount_to(
             base_total_amount
           )
         )
@@ -35,15 +35,17 @@ class ShoppingCartUsingPatterns
 
   private
 
-  def calculate_user_based_discount_for(amount)
-    discount_factory.create_by_customer(customer.discount_strategy_class).calculate_for(amount, items.size)
+  def apply_user_based_discount_to(amount)
+    discount_factory.create_by_customer(customer.discount_strategy_class)
+                    .apply_to(amount, items.size)
   end
 
-  def calculate_holiday_based_discount_for(amount)
-    discount_factory.create_by_date(Date.today).calculate_for(amount, items.size)
+  def apply_holiday_based_discount_to(amount)
+    discount_factory.create_by_date(Date.today)
+                    .apply_to(amount, items.size)
   end
 
-  def calculate_coupon_based_discount_for(amount)
+  def apply_coupon_based_discount_to(amount)
     return amount if @discount_coupon.blank?
 
     amount - amount * @discount_coupon.discount_percentage

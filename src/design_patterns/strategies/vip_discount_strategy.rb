@@ -6,7 +6,7 @@ class VipDiscountStrategy
     @vip = vip
   end
 
-  def calculate_for(amount, _items)
+  def apply_to(amount, _items)
     amount - amount * 0.15
   end
 end

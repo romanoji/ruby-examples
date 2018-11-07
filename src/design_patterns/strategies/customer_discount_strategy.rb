@@ -6,7 +6,7 @@ class CustomerDiscountStrategy
     @customer = customer
   end
 
-  def calculate_for(amount, _items)
+  def apply_to(amount, _items)
     return amount - amount * 0.05 if @customer.account_plan == :pro
 
     amount

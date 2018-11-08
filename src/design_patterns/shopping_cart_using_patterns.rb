@@ -17,7 +17,7 @@ class ShoppingCartUsingPatterns
   end
 
   def base_total_amount
-    items.sum(:price).to_d
+    items.sum(&:price).to_d
   end
 
   def calculate_total_amount

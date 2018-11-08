@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class FilesMover
+class FilesMigrator
   include DIContainer.injector[source_storage: 'file_system_adapter', destination_storage: 'aws_s3_adapter']
 
   def move_file(file_path)

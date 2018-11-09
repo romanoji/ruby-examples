@@ -7,7 +7,7 @@
 - [x] builder
 - [x] adapter
 - [x] observer
-- [ ] facade
+- [x] facade
 - [ ] decorator
 
 ### Resources

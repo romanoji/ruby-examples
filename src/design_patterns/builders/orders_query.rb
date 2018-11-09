@@ -5,10 +5,10 @@
 # Separate the construction of a complex object into smaller parts/steps.
 #
 # Pros:
-# - looks better than a constructor with 10 params or magic "attrs", which accepts anything
-# - minimize the object's requirements - constructor defines required params, and the rest are extra/optional ones
-# - expose clear interface to instantiate the object
-# - it can be validated step-by-step or in the object's building method
+# + looks better than a constructor with 10 params or magic "attrs", which accepts anything
+# + minimize the object's requirements - constructor defines required params, and the rest are extra/optional ones
+# + expose clear interface to instantiate the object
+# + it can be validated step-by-step or in the object's building method
 #
 # Other examples:
 # - Active Record Query (shown here in #execute method)

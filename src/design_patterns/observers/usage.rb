@@ -7,9 +7,9 @@
 # all its dependents (Observers) will be notified and updated automatically.
 #
 # Pros:
-# - looses coupling between objects
-# - Observer doesn't need to do period checks
-# - subscribers can be added/deleted dynamically
+# + looses coupling between objects
+# + Observer doesn't need to do period checks
+# + subscribers can be added/deleted dynamically
 #
 # Similar patterns:
 # - Publish-Subscribe

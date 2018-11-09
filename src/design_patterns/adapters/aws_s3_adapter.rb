@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AWSS3Adapter
+class AwsS3Adapter
   def initialize(bucket)
   end
 

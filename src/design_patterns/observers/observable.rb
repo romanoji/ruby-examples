@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-class Observable
+# Simplified version of http://ruby-doc.org/stdlib-2.5.1/libdoc/observer/rdoc/Observable.html
+
+module Observable
   def initialize
     @observers = []
     changed(false)

@@ -36,7 +36,7 @@ class ShoppingCartUsingPatterns
   private
 
   def apply_user_based_discount_to(amount)
-    discount_factory.create_by_customer(customer.discount_strategy_class)
+    discount_factory.create_by_customer(customer)
                     .apply_to(amount, items.size)
   end
 

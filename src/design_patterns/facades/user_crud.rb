@@ -2,7 +2,8 @@
 
 # Facade pattern
 #
-# Provides a simplified interface to a complex system of classes, library or framework.
+# Provides a simplified interface to a complex system of classes, library or framework,
+# so we don't need to know all underlying parts of it to be able to use it.
 #
 # Pros:
 # + provides a simple interface without a need to know underlying classes

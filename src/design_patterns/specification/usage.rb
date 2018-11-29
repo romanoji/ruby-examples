@@ -27,6 +27,5 @@ specification =
   ])
 
 (1..6).each do |n|
-  result = specification.satisfied_by?(n)
-  puts "#{n} => #{result}"
+  puts n if specification.satisfied_by?(n)
 end

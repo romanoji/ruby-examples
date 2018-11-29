@@ -8,7 +8,10 @@
 - [x] adapter
 - [x] observer
 - [x] facade
+- [x] composite
+- [x] specification
 - [ ] decorator
+- [ ] proxy
 
 ### Resources
 - https://bogdanvlviv.com/posts/ruby/patterns/design-patterns-in-ruby.html

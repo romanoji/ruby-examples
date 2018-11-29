@@ -10,6 +10,9 @@
 # + interchangeable classes due to sharing a common interface (polymorphic classes)
 # + often used to create a reusable class that will be flexible enough to cooperate with future classes
 #
+# Cons:
+# - increases overall code complexity by creating additional classes
+#
 # Other examples:
 # - Active Record DB adapters
 # - Encrypter with reader/writer adapters
